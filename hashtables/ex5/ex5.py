@@ -1,12 +1,25 @@
-# Your code here
-
-
 
 def finder(files, queries):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+    # initialize cache
+    cache = {}
+    # initialize result
+    result = []
+    # iterate through files
+    for file in files:
+        # initialize split file
+        file_name = file.split("/")[-1]
+        # if split -1 in cache append cach[split -1] with path
+        if file_name in cache:
+            cache[file_name].append(file)
+        # else add split -1 to cache wit [path] as value
+        else:
+            cache[file_name] = [file]
+    # iterate through queries
+    for query in queries:
+        # if query in cache iterate through cache[query] to append paths to result
+        if query in cache:
+            for i in cache[query]:
+                result.append(i) 
 
     return result
 

@@ -46,7 +46,7 @@ We expect you to be able to answer questions in these areas. Your responses cont
 
 Your finished project must include all of the following requirements:
 
-- [ ] Solve any three of the five problems
+- [x] Solve any three of the five problems
 
 For each problem that you choose to solve, complete the following:
 
@@ -61,8 +61,8 @@ _Note: For these exercises, we expect you to use Python's built-in `dict` as a h
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module, but they build on the material you just studied. Time allowing, stretch your limits, and see if you can deliver on the following optional goals:
 
-- [ ] Solve any four of the five problems
-- [ ] Solve all five problems
+- [x] Solve any four of the five problems
+- [x] Solve all five problems
 
 ## Submission format
 
