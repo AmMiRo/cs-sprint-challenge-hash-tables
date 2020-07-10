@@ -1,8 +1,26 @@
 def has_negatives(a):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+    # initialize cache
+    cache = {}
+    # initialize result
+    result = []
+    # iterate through a
+    for i in a:
+        # if item less than 0
+        if i < 0:
+            # if absolute item in cache append result with absolute item
+            if i * -1 in cache:
+                result.append(abs(i))
+            # else add item to cache with value of True
+            else:
+                cache[i] = True
+        # if item greater than 0
+        elif i > 0:
+            # if item - item * 2 in cache append result with item
+            if i * -1 in cache:
+                result.append(i)
+            # else add item to cache with value of True
+            else:
+                cache[i] = True
 
     return result
 
