@@ -15,7 +15,7 @@ def get_indices_of_item_weights(weights, length, limit):
         # if limit - weight is in cache
         else:
             # if limit - weight is > current weight solution is [cache[limit-weight], index]
-            if added_weight > curr_weight:
+            if cache[added_weight] > i:
                 solution = [cache[added_weight], i]
             # else solution is [index, cache[limit-weight]]
             else:

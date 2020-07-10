@@ -9,14 +9,14 @@ def intersection(arrays):
         for item in arrays[i]:
             # if item not in cache add item to cache with [index] as value
             if item not in cache:
-                cache[item] = [i]
+                cache[item] = 1
             # if item in cache append index to cache[item]
             else:
-                cache[item].append(i)
+                cache[item] += 1
     # iterate through cache
     for key in cache:
         # if length of cache[key] == length of arrays append to solution
-        if len(cache[key]) == len(arrays):
+        if cache[key] == len(arrays):
             result.append(key)
 
     return result

@@ -8,7 +8,7 @@ def has_negatives(a):
         # if item less than 0
         if i < 0:
             # if absolute item in cache append result with absolute item
-            if abs(i) in cache:
+            if i * -1 in cache:
                 result.append(abs(i))
             # else add item to cache with value of True
             else:
@@ -16,7 +16,7 @@ def has_negatives(a):
         # if item greater than 0
         elif i > 0:
             # if item - item * 2 in cache append result with item
-            if i - i * 2 in cache:
+            if i * -1 in cache:
                 result.append(i)
             # else add item to cache with value of True
             else:

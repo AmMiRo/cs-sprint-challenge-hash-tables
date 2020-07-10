@@ -4,7 +4,6 @@ class Ticket:
         self.source = source
         self.destination = destination
 
-# Bad example doesn't include "NONE" for final destination!!!!!!!!!!!!!!!!!
 def reconstruct_trip(tickets, length):
     # initialize cache
     cache = {}
